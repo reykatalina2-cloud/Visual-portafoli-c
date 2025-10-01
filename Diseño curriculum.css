@@ -1,44 +1,52 @@
-* {
+* { 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* Reinicio de estilos por defecto */
 }
 
 body {
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(135deg, #6a11cb, #a044ff);
+  /* Fondo degradado */
   color: #ffffff;
   padding: 30px;
 }
- body::before, body::after {
+
+/* Efectos decorativos circulares en el fondo */
+body::before, body::after {
   content: "";
   position: absolute;
   border-radius: 50%;
   opacity: 0.25;
- }
- body::before {
+}
+body::before {
   width: 400px;
   height: 400px;
   background: #fff;
   top: -100px;
   left: -100px;
- }
- body::after {
+}
+body::after {
   width: 300px;
   height: 300px;
   background: #000;
   bottom: -80px;
   right: -80px;
- }
- .container {
+}
+
+/* Contenedor principal transparente */
+.container {
   background: rgba(255, 255, 255, 0.1);
   padding: 60px;
   border-radius: 20px;
   text-align: center;
   backdrop-filter: blur(10px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-  z-index: 1; }
+  z-index: 1;
+}
 
+/* Caja de información general */
 .contenedor {
   max-width: 800px;
   margin: auto;
@@ -53,6 +61,7 @@ header {
   margin-bottom: 30px;
 }
 
+/* Estilo para la foto de perfil */
 .foto-perfil {
   width: 250px;
   height: 250px;
@@ -63,15 +72,16 @@ header {
   margin-bottom: 15px;
 }
 
- h1 {
-    font-size: 2.8rem;
-    margin-bottom: 15px;
-    font-weight: 600;}
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
 
 h2 {
-     font-size: 2.8rem;
-    margin-bottom: 15px;
-    font-weight: 600;
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  font-weight: 600;
 }
 
 ul {
@@ -89,6 +99,8 @@ footer {
   font-size: 0.9em;
   color: #ccc;
 }
+
+/* Botón volver */
 .btn-volver {
   display: inline-block;
   margin: 20px;
