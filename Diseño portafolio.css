@@ -1,0 +1,119 @@
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #a044ff);
+  color: #fff;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body::before, body::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.25;
+}
+body::before {
+  width: 400px;
+  height: 400px;
+  background: #fff;
+  top: -100px;
+  left: -100px;
+}
+body::after {
+  width: 300px;
+  height: 300px;
+  background: #000;
+  bottom: -80px;
+  right: -80px;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+.card img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+}
+.H0 img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+.H0 {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s;}
+.btn-volver {
+  display: inline-block;
+  margin: 20px;
+  padding: 12px 30px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #a044ff, #6a11cb);
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.btn-volver:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
